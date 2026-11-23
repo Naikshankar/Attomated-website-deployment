@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    background: #14213d;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #14213d, #0077b6);
+    color: white;
+    text-align: center;
+    padding: 110px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 21px;
+    margin-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+    background: white;
+    color: #14213d;
+    padding: 13px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* About Section */
+.about {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.about h2,
+.technologies h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 850px;
+    margin: auto;
+}
+
+/* Technologies Section */
+.technologies {
+    padding: 60px 10%;
+    text-align: center;
+    background: white;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #14213d;
+    color: white;
+    padding: 25px;
+    width: 180px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #14213d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+}
